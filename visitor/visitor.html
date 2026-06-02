@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Book</title>
+  <link rel="stylesheet" href="visitor.css">
+  <script src="../components/header.js" defer></script>
+</head>
+<body>
+  <site-header></site-header>
+
+  <main class="visitor-page">
+    <a href="../index/index.html" class="back-home">
+      <img src="../img/Caret_Circle_Left.svg" alt="">
+      <span>홈으로 돌아가기</span>
+    </a>
+
+    <section class="visitor-intro">
+      <h2>VISITOR BOOK</h2>
+      <p>방명록에서 제 작업이나 이야기에 한마디 남겨 주세요.</p>
+    </section>
+
+    <section class="guest-form">
+      <textarea placeholder="따뜻한 한마디를 남겨주세요 :)"></textarea>
+      <button type="button">남기기</button>
+    </section>
+
+    <section class="guest-list" aria-label="방명록 목록">
+      <article class="guest-card">
+        <div>
+          <strong>좋은 포트폴리오네요! 깔끔하고 보기 편해요 😊</strong>
+          <p>- 동원</p>
+        </div>
+        <time datetime="2024-05-01">2024.05.01</time>
+      </article>
+
+      <article class="guest-card">
+        <div>
+          <strong>디자인 센스가 돋보여요! 많이 배워갑니다 👍</strong>
+          <p>- 김개발</p>
+        </div>
+        <time datetime="2024-04-28">2024.04.28</time>
+      </article>
+
+      <article class="guest-card">
+        <div>
+          <strong>프로젝트 설명이 자세해서 이해하기 쉬웠어요!</strong>
+          <p>- 이웃</p>
+        </div>
+        <time datetime="2024-04-25">2024.04.25</time>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Email : chaeyeoni0418@gmail.com</p>
+  </footer>
+</body>
+</html>
