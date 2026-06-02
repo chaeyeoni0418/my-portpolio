@@ -161,13 +161,13 @@ a {
 
 .project-card {
   flex: 1;
-  padding: 18px;
+  padding: 16px;
   background-color: #f8f3eb;
   border: 1px solid #e2d5c4;
 }
 
 .project-img {
-  height: 220px;
+  height: 180px;
   margin-bottom: 18px;
   background-color: #efe3d2;
   border: 1px solid #e2d5c4;
@@ -180,7 +180,14 @@ a {
 .project-img img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.project-card:nth-child(3) .project-img img,
+.project-card:nth-child(4) .project-img img {
   object-fit: cover;
+  padding: 0;
 }
 
 .project-card h3 {

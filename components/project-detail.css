@@ -209,21 +209,18 @@ a {
   top: 24px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 6px;
-  background-color: rgba(255, 250, 243, 0.55);
-  border: 1px solid #e2d5c4;
+  gap: 24px;
+  padding-top: 8px;
 }
 
 .design-side a {
-  padding: 9px 12px;
+  padding: 0;
   color: #5f5148;
-  font-size: 13px;
+  font-size: 16px;
   white-space: nowrap;
 }
 
 .design-side a.active {
-  background-color: #efe3d2;
   color: #2b241f;
   font-weight: bold;
 }

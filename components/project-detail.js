@@ -25,15 +25,15 @@ class ProjectDetail extends HTMLElement {
       summary: this.getAttribute("summary"),
       problem:
         this.getAttribute("problem") ||
-        "화면 크기에 따라 레이아웃이 자연스럽게 보이도록 조정하는 과정이 어려웠습니다.",
+        "생각한 화면을 실제 코드로 옮기면서 간격과 크기를 맞추는 부분이 조금 어려웠습니다.",
       lesson:
         this.getAttribute("lesson") ||
-        "페이지 구조를 나누고 공통 스타일을 관리하는 방법을 배웠습니다.",
+        "화면을 작은 영역으로 나누고, 공통 스타일을 정리해서 쓰는 방법을 배웠습니다.",
       process:
         this.getAttribute("process") ||
-        "아이디어를 정리한 뒤 필요한 화면을 나누고, HTML로 구조를 만든 다음 CSS로 레이아웃과 분위기를 맞추며 완성했습니다.",
+        "먼저 필요한 화면을 나누고 HTML로 구조를 만든 뒤, CSS로 간격과 분위기를 맞추며 완성했습니다.",
       link: this.getAttribute("link"),
-      buttonText: this.getAttribute("button-text") || "실제 프로젝트 보기 →",
+      buttonText: this.getAttribute("button-text") || "프로젝트 보기 →",
       detailSchedule: this.getAttribute("detail-schedule") || "2024.03 - 2024.04",
       detailRole: this.getAttribute("detail-role") || "개인 프로젝트",
       tags,
@@ -64,7 +64,7 @@ class ProjectDetail extends HTMLElement {
               ${data.tags.map((tag) => `<span>${tag}</span>`).join("")}
             </div>
 
-            <h3>프로젝트 개요</h3>
+            <h3>프로젝트 소개</h3>
             <p>${data.summary}</p>
 
             <div class="btn-box">
@@ -91,7 +91,7 @@ class ProjectDetail extends HTMLElement {
           <aside class="design-side">
             <a href="#intro" class="active">프로젝트 소개</a>
             <a href="#process">개발 과정</a>
-            <a href="${data.link}">페이지 보기</a>
+            <a href="${data.link}">프로젝트 보기</a>
           </aside>
 
           <main class="design-content">
@@ -105,7 +105,7 @@ class ProjectDetail extends HTMLElement {
               </div>
 
               <div class="design-info">
-                <h3>핵심 정보</h3>
+                <h3>한눈에 보기</h3>
                 <p>${data.summary}</p>
                 <div class="tag-box">
                   ${data.tags.map((tag) => `<span>${tag}</span>`).join("")}
@@ -118,7 +118,7 @@ class ProjectDetail extends HTMLElement {
               <h3>프로젝트 소개</h3>
               <p>
                 ${data.summary}
-                사용자가 정보를 쉽게 이해하고 이동할 수 있도록 화면 구조와 시각적 흐름을 정리했습니다.
+                사용자가 편하게 볼 수 있도록 화면 흐름과 정보 배치를 신경 써서 만들었습니다.
               </p>
             </div>
 
@@ -154,7 +154,7 @@ class ProjectDetail extends HTMLElement {
           <p>
             ${data.summary}
             <br>
-            ${data.tags.join(", ")}를 사용하여 화면을 구성했고, 실제 사용자가 보는 UI/UX를 구현하며 완성도를 높였습니다.
+            ${data.tags.join(", ")}를 사용해서 화면을 구성했습니다.
           </p>
         </div>
 
